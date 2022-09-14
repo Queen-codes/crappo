@@ -16,8 +16,8 @@ function App() {
  const[menuOpen, setMenuOpen] = useState(false)
 
  useEffect(() => {
-  window.addEventListener('load', function() { AOS.init({duration: 2500}) })
-  //AOS.init({duration: 2500});
+  //window.addEventListener('load', function() { AOS.init({duration: 2500}) })
+  AOS.init({duration: 2500});
 }, [])
 
  function handleToggler () {
