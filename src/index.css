@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #0d0d2b;
+  color: #fff;
+  line-height: 1.5;
+}
+
+::placeholder {
+  color: #0d0d2b;
+}
+
+.dropdown-item:hover {
+  color: hsla(220, 80%, 56%, 1);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile-toggler {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.nav-menu a {
+  color: #fff;
+  letter-spacing: 0.01em;
+  font-size: 1rem;
+}
+
+.hero-image {
+  background-image: url(./assets/[].png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.text {
+  background-image: url(./assets/ethvector.png);
+  background-repeat: no-repeat;
+}
+.arrow-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(43, 7, 110, 0.2);
+  background: none;
+}
+
+.bx-chevron-right {
+  font-size: 1.8rem;
+  color: #3671e9;
+}
+
+@media (max-width: 45em) {
+  .mobile-toggler {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-text {
+    margin-top: 4rem;
+  }
+
+  .market-section {
+    display: flex;
+  }
+
+  .section-image {
+    grid-column: 2 / -1;
+  }
+
+  .article-grid {
+    grid-row: 1;
+  }
+}
